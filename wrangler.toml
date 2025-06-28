@@ -1,0 +1,16 @@
+name = "telegram"
+main = "src/worker.js"
+compatibility_date = "2023-05-18"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "telegram-bot"
+database_id = "e0f3f28c-8d94-4b50-89d5-b4e0d693caac"
+
+[vars]
+TOKEN = "8030947483:AAFS1FLas0-KDhicJjKkSPt-WUTbGThhc_k"
+SECRET = "AAFS1FLas0-KDhicJjKkSPt-WUTbGThhc_k"
+ADMIN_ID = "7716048556"
+BOT_USERNAME = "AutoReqAccepthubbot"
+WEBHOOK_URL = "https://accepter.subdomain.workers.dev"
+WEBHOOK_PATH = "/endpoint"

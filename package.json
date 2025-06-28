@@ -1,0 +1,30 @@
+{
+  "name": "telegram",
+  "version": "1.0.0",
+  "description": "Telegram bot for auto-approving join requests with Cloudflare Workers and D1",
+  "main": "src/worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "migrate:local": "wrangler d1 migrations apply telegram-bot-db --local",
+    "migrate:remote": "wrangler d1 migrations apply telegram-bot-db",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "cloudflare",
+    "workers",
+    "d1"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230801.0",
+    "typescript": "^5.2.2",
+    "wrangler": "^3.3.0"
+  },
+  "dependencies": {
+    "hono": "^3.3.4"
+  }
+}
